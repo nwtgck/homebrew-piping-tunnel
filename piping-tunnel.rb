@@ -2,24 +2,24 @@
 class PipingTunnel < Formula
   desc "Tunnel over HTTP with Piping Server"
   homepage "https://github.com/nwtgck/go-piping-tunnel"
-  version "0.4.2"
+  version "0.5.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.4.2/piping-tunnel-0.4.2-darwin-amd64.tar.gz"
-    sha256 "bc1a71b8bdd02f414931e85be0cdf91c427a370800934a2eb360fda6e77f428b"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.5.0/piping-tunnel-0.5.0-darwin-amd64.tar.gz"
+    sha256 "6d6a443eaa8bac347ba404bb6bb2a2baaa43ccc2cabbcc71bcf7e0e9d2748fbc"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.4.2/piping-tunnel-0.4.2-linux-amd64.tar.gz"
-    sha256 "fe507a43f97bca99c64d416562068cbd9b3cedb2d4b99c16694c2586abff33a5"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.5.0/piping-tunnel-0.5.0-linux-amd64.tar.gz"
+    sha256 "3475dedfbad3404b7dbb435f11cd5b3154c277e569950ee487e0338e07ae72ce"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.4.2/piping-tunnel-0.4.2-linux-armv6.tar.gz"
-    sha256 "a188c736dcd06aafcc4bc8e48a1a9dcad20875656fabf2e147eede09dcf4dfa5"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.5.0/piping-tunnel-0.5.0-linux-armv6.tar.gz"
+    sha256 "a782d27e6e8ec2215f39cdecdf7be9d5d9c5d91e75ed7d66e40e6598f17ff319"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.4.2/piping-tunnel-0.4.2-linux-arm64.tar.gz"
-    sha256 "8ea4c01fafaa76f0ded384b8c15ce0660f5c087f33ee97aaed9f73d453f0401a"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.5.0/piping-tunnel-0.5.0-linux-arm64.tar.gz"
+    sha256 "f2aca1d5efff31b1eb43feaad1bb9b7056275139edf5d2d0b8ec6c7d820428d5"
   end
 
   def install
