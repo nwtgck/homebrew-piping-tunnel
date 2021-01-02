@@ -2,24 +2,24 @@
 class PipingTunnel < Formula
   desc "Tunnel over HTTP with Piping Server"
   homepage "https://github.com/nwtgck/go-piping-tunnel"
-  version "0.8.0"
+  version "0.9.0-pmux1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.8.0/piping-tunnel-0.8.0-darwin-amd64.tar.gz"
-    sha256 "83049b76445522e4f3c332361eb230d84200a04c3315f32708c0d381b947686d"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux1/piping-tunnel-0.9.0-pmux1-darwin-amd64.tar.gz"
+    sha256 "64b4737165230e92add74e10afc93ff1b4e7c41e91180b957ecb10eefc6c8863"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.8.0/piping-tunnel-0.8.0-linux-amd64.tar.gz"
-    sha256 "85ac5f8ea46ac48399f26318cbd6cd8c8ab280bdf49b4d349a7cd82c76ff9a39"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux1/piping-tunnel-0.9.0-pmux1-linux-amd64.tar.gz"
+    sha256 "1b82d852fa058e1c9f04777110319ffc3847dc346fbd7dc3a4633c3320ccfdd3"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.8.0/piping-tunnel-0.8.0-linux-armv6.tar.gz"
-    sha256 "100c83d6b23535652ef32f8486468f36f8d6492bdd23be39f089bc2648a37565"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux1/piping-tunnel-0.9.0-pmux1-linux-armv6.tar.gz"
+    sha256 "a2c0cf574015011b0edbcfbbe7bcec8b6fc2c70dbe1b4dcdf1c43b237184e193"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.8.0/piping-tunnel-0.8.0-linux-arm64.tar.gz"
-    sha256 "76d3873c15bc5a1eb817f9fd79f08d5f260f314cf5c444cb14362e8486511983"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux1/piping-tunnel-0.9.0-pmux1-linux-arm64.tar.gz"
+    sha256 "9c3fa58ded4ce6107dac7375bb51eb82d64912f0b3ec48e8fdf29cb1ba3afd49"
   end
 
   def install
