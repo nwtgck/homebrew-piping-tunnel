@@ -2,24 +2,24 @@
 class PipingTunnel < Formula
   desc "Tunnel over HTTP with Piping Server"
   homepage "https://github.com/nwtgck/go-piping-tunnel"
-  version "0.9.0-pmux2"
+  version "0.9.0-pmux3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux2/piping-tunnel-0.9.0-pmux2-darwin-amd64.tar.gz"
-    sha256 "29593c315fd0975f23746dff4b573c724cca916ba077346ffef322d995ab7e62"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux3/piping-tunnel-0.9.0-pmux3-darwin-amd64.tar.gz"
+    sha256 "068fb3cabc92170c58819f8d1fa361193ea228e27b5605a2e3116d3c16d939f7"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux2/piping-tunnel-0.9.0-pmux2-linux-amd64.tar.gz"
-    sha256 "cffc1ab7a659f0cc8a08e09d2f6412699a9e86b7b1e9dee72cb1f33ae8c6a068"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux3/piping-tunnel-0.9.0-pmux3-linux-amd64.tar.gz"
+    sha256 "3fac6fb6cef8c945afa8c89f993fe1b671851a6e7b7f6c895308fec82f0406ba"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux2/piping-tunnel-0.9.0-pmux2-linux-armv6.tar.gz"
-    sha256 "f782c448e900299069675d82759c4e489c85d7ef663ec581fbe62b1b84a30c9a"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux3/piping-tunnel-0.9.0-pmux3-linux-armv6.tar.gz"
+    sha256 "1ef761147c526956a712f142d111d6cb8be4ac452084161537caf94ba460f513"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux2/piping-tunnel-0.9.0-pmux2-linux-arm64.tar.gz"
-    sha256 "aa08910f87b5c9730771e8de7f8d6e67bc91459e9b67526e5d297b5be08baeae"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux3/piping-tunnel-0.9.0-pmux3-linux-arm64.tar.gz"
+    sha256 "ce74c501f7f9a2d0f89dcf684ad6d8cecfcec3a3e76bd690c1f41bd1217e65f9"
   end
 
   def install
