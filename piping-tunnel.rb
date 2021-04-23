@@ -5,28 +5,28 @@
 class PipingTunnel < Formula
   desc "Tunneling from anywhere with Piping Server"
   homepage "https://github.com/nwtgck/go-piping-tunnel"
-  version "0.9.0-pmux6"
+  version "0.9.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux6/piping-tunnel-0.9.0-pmux6-darwin-amd64.tar.gz"
-    sha256 "4312f5e6ba554fa39c6738c878e7acab7aa2e910520ce59fee8679af7ea71a1b"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0/piping-tunnel-0.9.0-darwin-amd64.tar.gz"
+    sha256 "17eb6fd9cd2a189cbfcb0c42b66dbd9937fbc2432d822506b193254034836a96"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux6/piping-tunnel-0.9.0-pmux6-darwin-arm64.tar.gz"
-    sha256 "b94e20fa8183b21ad702ddae5e46dac252456d79d9ee966a513182e3cd20deeb"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0/piping-tunnel-0.9.0-darwin-arm64.tar.gz"
+    sha256 "5141c33317ac8e501b8a6217498b0a1b104b1e8ff1c0e0a6a03cda06c0a267ef"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux6/piping-tunnel-0.9.0-pmux6-linux-amd64.tar.gz"
-    sha256 "0794593eded5c9bbed7f77d53d15ad26a01b320a85a6b3dae2d640140a72e530"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0/piping-tunnel-0.9.0-linux-amd64.tar.gz"
+    sha256 "e472efe4d859a8350eade7ec1e07d5a601edd3432040d200c6e827e2d61317a9"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux6/piping-tunnel-0.9.0-pmux6-linux-armv6.tar.gz"
-    sha256 "da7ae7456cacd2f8bbe12811c48cc4b26fbd15f450389b256ff539334a251bd7"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0/piping-tunnel-0.9.0-linux-armv6.tar.gz"
+    sha256 "edd018b93c2f75cca91dfb32a13cdd90cf900721c39024535157333f7b553f58"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0-pmux6/piping-tunnel-0.9.0-pmux6-linux-arm64.tar.gz"
-    sha256 "3cdc3e490241785a1a738495ab5457808014764c1ea8b24f3491e400a9b9ffb0"
+    url "https://github.com/nwtgck/go-piping-tunnel/releases/download/v0.9.0/piping-tunnel-0.9.0-linux-arm64.tar.gz"
+    sha256 "0f4e92986afe9f07b637e01d5c086455db3694a4e1345cf0d36e02e9b1e4e94c"
   end
 
   def install
